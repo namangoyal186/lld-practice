@@ -50,9 +50,9 @@ public class Main {
         printOverallAvailability(allFlours);
 
         //2. Create sample vehicles
-        Vehicle car1 = new Car("HR26-HH-0001");
-        Vehicle bike1 = new Bike("PB15-HH-0002");
-        Vehicle truck1 = new Truck("MH02-HH-0003");
+        Vehicle car1 = VehicleFactory.createVehicle(VehicleType.Car,"HR26-HH-0001");
+        Vehicle bike1 = VehicleFactory.createVehicle(VehicleType.Bike,"PB15-HH-0002");
+        Vehicle truck1 = VehicleFactory.createVehicle(VehicleType.Truck,"MH02-HH-0003");
 
             ParkingTicket ticket1 = handleVehicleArrival(parkingLot,car1);
 
@@ -72,8 +72,8 @@ public class Main {
 
             printOverallAvailability(allFlours);
 
-            Vehicle truck2 = new Truck("MH024-HH-0003");
-            Vehicle truck3 = new Truck("MH0288-HH-0003");
+            Vehicle truck2 = VehicleFactory.createVehicle(VehicleType.Truck,"MH024-HH-0003");
+            Vehicle truck3 = VehicleFactory.createVehicle(VehicleType.Truck,"MH0288-HH-0003");
 
             ParkingTicket ticket4 = handleVehicleArrival(parkingLot,truck2);
             ParkingTicket ticket5 = handleVehicleArrival(parkingLot,truck3);
