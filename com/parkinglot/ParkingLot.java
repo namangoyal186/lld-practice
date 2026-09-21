@@ -5,7 +5,7 @@ public class ParkingLot {
     private List<ParkingFloor> parkingFloorList;
     private static ParkingLot parkingLotInstance;
 
-    public ParkingLot(List<ParkingFloor> parkingFloorList) {
+    private ParkingLot(List<ParkingFloor> parkingFloorList) {
         this.parkingFloorList = parkingFloorList;
     }
 
